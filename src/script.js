@@ -120,12 +120,12 @@ window.addEventListener('resize', () =>
  * Camera
  */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 200)
-camera.position.set(20, 45, 10)
+camera.position.set(20, 55, 10)
 scene.add(camera)
 
 // gui.add(camera.position, 'x').min(- 5).max(5).step(0.001).name('cameraX')
-gui.add(camera.position, 'y').min(1).max(80).step(0.0001).name('cameraY')
-gui.add(camera.position, 'z').min(- 60).max(60).step(0.001).name('cameraZ')
+gui.add(camera.position, 'y').min(1).max(80).step(0.00001).name('cameraY')
+gui.add(camera.position, 'z').min(- 60).max(60).step(0.00001).name('cameraZ')
 
 // Controls
 const controls = new OrbitControls(camera, canvas)
